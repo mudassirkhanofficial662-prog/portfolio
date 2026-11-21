@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mudassir Khan — Artificial Intelligence student and aspiring AI Engineer. Explore projects, skills, and learning journey." />
+  <meta name="theme-color" content="#080912" />
+  <title>Mudassir Khan | AI Student & Aspiring AI Engineer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+    :root{--bg:#080912;--panel:#101321;--panel2:#14182a;--text:#f4f5ff;--muted:#a0a6bd;--line:rgba(177,185,255,.14);--violet:#9b7bff;--cyan:#65e6e0;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(ellipse at 15% 5%,rgba(120,83,255,.17),transparent 34%),radial-gradient(ellipse at 88% 28%,rgba(52,211,203,.10),transparent 28%),linear-gradient(180deg,#080912,#090b16 55%,#080912)}
+    body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+    a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 44px));margin:auto}.mono,.eyebrow,.tag,.nav-label{font-family:"DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(8,9,18,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.04em;font-size:1.12rem}.brand span{color:var(--cyan)}.nav-links{display:flex;gap:30px;align-items:center;color:var(--muted);font-size:.88rem}.nav-links a:hover{color:var(--text)}.nav-cta{padding:10px 16px;border:1px solid rgba(155,123,255,.55);border-radius:999px;color:var(--text)!important}.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 12px;font-size:1.1rem}
+    .hero{min-height:760px;display:flex;align-items:center;padding:145px 0 100px;position:relative}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:55px;align-items:center}.eyebrow{font-size:.72rem;color:var(--cyan);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--cyan)}h1{font-size:clamp(3.2rem,7.3vw,6.5rem);line-height:.99;letter-spacing:-.075em;margin:25px 0 24px;font-weight:800}.gradient{background:linear-gradient(100deg,#fff 5%,#bba8ff 50%,#70e8df 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{max-width:630px;color:var(--muted);font-size:1.08rem}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;border-radius:10px;font-weight:700;font-size:.9rem;border:1px solid var(--line);transition:.25s}.btn-primary{background:linear-gradient(110deg,#8d6bff,#5f9efb);border:0;color:#fff;box-shadow:0 10px 35px rgba(121,99,255,.22)}.btn:hover{transform:translateY(-3px);border-color:rgba(101,230,224,.6)}.btn-primary:hover{box-shadow:0 14px 40px rgba(121,99,255,.34)}.hero-note{font-size:.78rem;color:#777f9b;margin-top:22px}
+    .orbit-card{aspect-ratio:1;max-width:350px;width:100%;margin:auto;position:relative;display:grid;place-items:center}.orbit{position:absolute;border:1px solid rgba(155,123,255,.32);border-radius:50%;inset:7%;animation:spin 24s linear infinite}.orbit.two{inset:19%;border-color:rgba(101,230,224,.3);animation-direction:reverse;animation-duration:18s}.orbit:before,.orbit.two:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px var(--cyan);top:15%;left:13%}.orbit.two:before{background:var(--violet);box-shadow:0 0 18px var(--violet);top:75%;left:7%}@keyframes spin{to{transform:rotate(360deg)}}.core{width:46%;aspect-ratio:1;border-radius:28%;display:grid;place-items:center;background:linear-gradient(145deg,rgba(155,123,255,.22),rgba(101,230,224,.08));border:1px solid rgba(190,180,255,.32);box-shadow:0 0 80px rgba(130,100,255,.17),inset 0 0 40px rgba(255,255,255,.035);font-size:3.5rem;color:#d9d0ff}.orbit-label{position:absolute;bottom:5%;right:0;color:var(--muted);font: .68rem "DM Mono",monospace;letter-spacing:.1em}
+    section{padding:100px 0}.section-head{margin-bottom:42px}.section-head .eyebrow{margin-bottom:12px}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.06em;line-height:1.1;margin:0}.section-head p{color:var(--muted);max-width:650px;margin:16px 0 0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.glass{background:linear-gradient(145deg,rgba(20,24,42,.9),rgba(13,16,29,.9));border:1px solid var(--line);border-radius:18px;padding:28px}.about-main p{color:var(--muted);margin:0 0 16px}.about-main p:last-child{margin:0}.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.mini-card{padding:22px;border-radius:14px;background:rgba(255,255,255,.025);border:1px solid var(--line)}.mini-card strong{display:block;font-size:1.05rem;margin-bottom:5px}.mini-card span{color:var(--muted);font-size:.82rem}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill-card{padding:25px;border-radius:16px;border:1px solid var(--line);background:rgba(16,19,33,.8)}.skill-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(155,123,255,.14);color:#c9baff;font-size:1.2rem;margin-bottom:20px}.skill-card h3{margin:0 0 8px;font-size:1.08rem}.skill-card p{margin:0 0 18px;color:var(--muted);font-size:.86rem}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{padding:7px 10px;border-radius:7px;background:rgba(255,255,255,.045);border:1px solid var(--line);color:#d6d9ea;font: .72rem "DM Mono",monospace}
+    .projects-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.project{min-height:280px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}.project:after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;background:rgba(135,103,255,.12);filter:blur(5px);right:-95px;top:-105px;pointer-events:none}.project>*{position:relative;z-index:1}.project-top{display:flex;justify-content:space-between;align-items:center}.project-number{font: .75rem "DM Mono",monospace;color:var(--cyan)}.project h3{font-size:1.5rem;letter-spacing:-.04em;margin:18px 0 10px}.project p{color:var(--muted);font-size:.9rem;max-width:570px;margin:0}.project-footer{display:flex;align-items:center;justify-content:space-between;margin-top:28px}.project-status{color:#bdb0ff;font: .68rem "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em}.arrow{font-size:1.25rem;color:var(--cyan)}.placeholder{border-style:dashed;background:rgba(16,19,33,.42)}.placeholder .project-status{color:#9ca3b9}
+    .timeline{border-left:1px solid rgba(155,123,255,.4);margin-left:8px;padding-left:28px;display:grid;gap:24px}.timeline-item{position:relative}.timeline-item:before{content:"";position:absolute;left:-34px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 16px rgba(101,230,224,.6)}.timeline-item h3{margin:0 0 5px;font-size:1.05rem}.timeline-item p{margin:0;color:var(--muted);font-size:.88rem}.timeline-item .meta{font:.7rem "DM Mono",monospace;color:var(--violet);margin-bottom:7px;text-transform:uppercase}
+    .contact-panel{padding:42px;border-radius:22px;border:1px solid rgba(155,123,255,.28);background:radial-gradient(ellipse at 90% 0%,rgba(101,230,224,.1),transparent 35%),linear-gradient(130deg,rgba(26,23,49,.95),rgba(13,17,30,.95));display:flex;justify-content:space-between;align-items:center;gap:30px}.contact-panel h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.06em;line-height:1.1;margin:10px 0}.contact-panel p{color:var(--muted);max-width:570px;margin:0}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.contact-hint{font-size:.75rem;color:#8990a9;margin-top:18px}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:#7f879f;font-size:.78rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:800px){.hero{min-height:auto;padding:135px 0 75px}.hero-grid{grid-template-columns:1fr;gap:35px}.orbit-card{max-width:240px}.hero-grid>div:first-child{order:1}.orbit-card{order:0}.hero-grid>div:first-child{margin-top:10px}.skills-grid{grid-template-columns:1fr 1fr}.projects-grid{grid-template-columns:1fr}.contact-panel{align-items:flex-start;flex-direction:column}.about-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.container{width:min(100% - 32px,var(--max))}.nav-inner{height:68px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 22px 24px;background:rgba(8,9,18,.97);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:17px}.nav-links.open{display:flex}.nav-cta{text-align:center}.hero{padding-top:115px}h1{font-size:clamp(3rem,16vw,4.7rem)}.hero-copy{font-size:.98rem}.orbit-card{max-width:205px}section{padding:75px 0}.skills-grid{grid-template-columns:1fr}.glass{padding:22px}.contact-panel{padding:27px}.stat-row{grid-template-columns:1fr 1fr}.footer-inner{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">MK<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a class="nav-cta" href="#contact">Let's connect ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Artificial Intelligence · Pakistan</div>
+          <h1>Building with<br><span class="gradient">intelligence.</span></h1>
+          <p class="hero-copy">I'm <strong>Mudassir Khan</strong> — an Artificial Intelligence student exploring how data, machine learning, and thoughtful software can solve real-world problems.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a>
+            <a class="btn" href="#contact">Get in touch <span>→</span></a>
+          </div>
+          <p class="hero-note mono">Curious mind · Consistent learner · Future AI Engineer</p>
+        </div>
+        <div class="orbit-card" aria-label="Abstract AI-inspired orbital illustration">
+          <div class="orbit"></div><div class="orbit two"></div><div class="core">✳</div>
+          <div class="orbit-label">LEARN / BUILD / ITERATE</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">01 / About</div><h2>A student of AI.<br><span class="gradient">A builder in progress.</span></h2></div>
+        <div class="about-grid">
+          <div class="glass about-main reveal">
+            <p>I'm currently pursuing a <strong>BS in Artificial Intelligence</strong> at Abdul Wali Khan University Mardan. My learning journey is focused on building strong foundations in programming, data analysis, and machine learning.</p>
+            <p>I enjoy turning concepts into practical projects — understanding the problem, working with data, experimenting with models, and presenting useful results. I'm especially interested in developing AI systems that make information easier to understand and act on.</p>
+          </div>
+          <div class="stat-row reveal">
+            <div class="mini-card"><strong>AI & ML</strong><span>Learning the foundations and practical workflow</span></div>
+            <div class="mini-card"><strong>Python</strong><span>Programming, data handling, and experimentation</span></div>
+            <div class="mini-card"><strong>Project-led</strong><span>Learning by building and iterating</span></div>
+            <div class="mini-card"><strong>Curiosity</strong><span>Exploring ideas and emerging technologies</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">02 / Toolkit</div><h2>Skills I'm <span class="gradient">developing.</span></h2><p>A snapshot of the tools and concepts I'm studying and applying. This list reflects my learning areas, not a claim of expert-level mastery.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Programming</h3><p>Writing code and strengthening problem-solving fundamentals.</p><div class="chips"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">OOP</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">▥</div><h3>Data & Visualization</h3><p>Working with datasets, cleaning information, and communicating patterns.</p><div class="chips"><span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">✳</div><h3>AI & Machine Learning</h3><p>Learning core ML concepts and exploring generative AI applications.</p><div class="chips"><span class="chip">Machine Learning</span><span class="chip">Regression</span><span class="chip">Generative AI</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">03 / Selected work</div><h2>Ideas turned into <span class="gradient">projects.</span></h2><p>Practical work from my learning journey. More experiments and projects will be added as they develop.</p></div>
+        <div class="projects-grid">
+          <article class="glass project reveal">
+            <div><div class="project-top"><span class="project-number">PROJECT / 001</span><span class="project-status">Featured project</span></div><h3>CommentSurvey AI</h3><p>A YouTube comment analysis project that collects comments and turns audience opinions into survey-style insights. The goal is to make feedback easier to explore through sentiment-style summaries and visualizations.</p></div>
+            <div class="project-footer"><div class="chips"><span class="chip">Python</span><span class="chip">Gradio</span><span class="chip">AI analysis</span><span class="chip">Visualization</span></div><span class="arrow">↗</span></div>
+          </article>
+          <article class="glass project placeholder reveal">
+            <div><div class="project-top"><span class="project-number">PROJECT / 002</span><span class="project-status">In progress</span></div><h3>Machine Learning Experiments</h3><p>A space for future notebooks and experiments covering data preparation, regression, model evaluation, and core machine-learning workflows.</p></div>
+            <div class="project-footer"><div class="chips"><span class="chip">ML</span><span class="chip">Python</span></div><span class="arrow">＋</span></div>
+          </article>
+          <article class="glass project placeholder reveal">
+            <div><div class="project-top"><span class="project-number">PROJECT / 003</span><span class="project-status">Coming next</span></div><h3>Python & Data Projects</h3><p>Small applications and data-analysis exercises that strengthen programming, problem-solving, and practical data skills.</p></div>
+            <div class="project-footer"><div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span></div><span class="arrow">＋</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">04 / Education</div><h2>The learning <span class="gradient">journey.</span></h2></div>
+        <div class="glass reveal">
+          <div class="timeline">
+            <div class="timeline-item"><div class="meta">Education</div><h3>BS Artificial Intelligence</h3><p>Abdul Wali Khan University Mardan · Pakistan</p></div>
+            <div class="timeline-item"><div class="meta">Certification</div><h3>Generative AI Course</h3><p>HEC certificate · Exploring the foundations and applications of generative AI</p></div>
+            <div class="timeline-item"><div class="meta">Currently learning</div><h3>Machine Learning & Data Science</h3><p>Building understanding through coursework, practice, and hands-on projects</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div><div class="eyebrow">05 / Contact</div><h2>Let's build something<br><span class="gradient">meaningful.</span></h2><p>I'm open to connecting with fellow learners, developers, mentors, and people working on interesting AI ideas.</p><div class="contact-hint">Contact links are placeholders until your actual details are added.</div></div>
+          <div class="contact-actions"><a class="btn btn-primary" href="mailto:YOUR_EMAIL@example.com" data-placeholder="email">Email me ↗</a><a class="btn" href="#contact" data-placeholder="linkedin">LinkedIn ↗</a><a class="btn" href="#contact" data-placeholder="github">GitHub ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> Mudassir Khan. Built with curiosity.</span><span class="mono">LEARN · BUILD · GROW</span></div></footer>
+  <script>
+    // Add your real links here when ready. Leave a value empty until you have the correct URL.
+    const CONTACT_LINKS = { email: "", linkedin: "", github: "" };
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById("menuBtn"), navLinks = document.getElementById("navLinks");
+    menuBtn.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(open));
+      menuBtn.textContent = open ? "✕" : "☰";
+    });
+    navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      navLinks.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false"); menuBtn.textContent="☰";
+    }));
+    document.querySelectorAll("[data-placeholder]").forEach(link => {
+      const key = link.dataset.placeholder, target = CONTACT_LINKS[key];
+      if (target) link.href = key === "email" ? `mailto:${target}` : target;
+      else link.addEventListener("click", e => { e.preventDefault(); alert(`Add your ${key} details in the CONTACT_LINKS section near the bottom of index.html.`); });
+    });
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); }
+    }), {threshold:.12});
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
